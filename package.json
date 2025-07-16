@@ -9,19 +9,31 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.5"
+    "@ant-design/nextjs-registry": "^1.0.2",
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "@clerk/nextjs": "^6.23.3",
+    "@heroui/react": "^2.8.0-beta.11",
+    "@prisma/client": "^6.11.1",
+    "antd": "^5.26.4",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^12.23.0",
+    "lucide-react": "^0.525.0",
+    "next": "15.3.5",
+    "next-cloudinary": "^6.16.0",
+    "prisma": "^6.11.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zod": "^4.0.5"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5"
   }
 }

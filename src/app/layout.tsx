@@ -1,16 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import NavBar from "@/components/NavBar";
+import { Providers } from "./providers";
+import "@ant-design/v5-patch-for-react-19";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +16,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body>
+       <Providers>
+          <div className="w-full px-4 bg-white md:px-8 lg:px-16 xl:px-32 2xl:px-50">
+              <NavBar />
+          </div>
+          <div className="px-4 bg-slate-100 md:px-8 lg:px-16 xl:px-32 2xl:px-50">
+            {children}
+          </div>
+       </Providers>
       </body>
     </html>
   );
