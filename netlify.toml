@@ -1,10 +1,10 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  environment = { NODE_VERSION = "20" }
+  environment = { 
+    NODE_VERSION = "20",
+    PRISMA_GENERATE_DATAPROXY = "false"
+  }
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
-
-[build.environment]
-  PRISMA_GENERATE_DATAPROXY = "false"
